@@ -10,8 +10,8 @@ type Anonymity struct {
 	rand *rand.Rand
 }
 
-// NewAnonymity creates a new Anonymity instance.
-func NewAnonymity() *Anonymity {
+// New creates a new Anonymity instance.
+func New() *Anonymity {
 	source := rand.NewSource(time.Now().UnixNano())
 	return &Anonymity{rand: rand.New(source)}
 }

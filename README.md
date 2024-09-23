@@ -21,7 +21,7 @@ import (
 )
 
 func main() {
-    a := anonymity.NewAnonymity()
+    a := anonymity.New()
 	
     // Generate random ip address
     ip := a.IP()

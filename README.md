@@ -52,6 +52,5 @@ func main() {
     // X-Forwarded-Host		78.82.211.197
     // X-Forwarded-For		78.82.211.197
     // X-Forwarded-Server	78.82.211.197
-    // ::::::::::::::::::::::::::
 }
 ```

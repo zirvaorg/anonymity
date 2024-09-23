@@ -4,7 +4,7 @@ import "testing"
 
 // TestRandomHeader tests the RandomHeader method.
 func TestHeader(t *testing.T) {
-	a := NewAnonymity()
+	a := New()
 	ip := "192.0.2.1"
 	headers := a.Header(ip)
 	if len(headers) != 8 {

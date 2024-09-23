@@ -10,6 +10,6 @@ var userAgents = []string{
 }
 
 // UserAgent returns a random user agent string.
-func (a *Anonymity) UserAgent() string {
+func (a *Generator) UserAgent() string {
 	return userAgents[a.rand.Intn(len(userAgents))]
 }

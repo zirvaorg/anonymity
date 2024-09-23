@@ -7,7 +7,7 @@ type Header struct {
 }
 
 // Header generates a random header with the given IP address.
-func (a *Anonymity) Header(ip string) []Header {
+func (a *Generator) Header(ip string) []Header {
 	headers := []Header{
 		{"X-Originating-IP", ip},
 		{"X-Remote-IP", ip},

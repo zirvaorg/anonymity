@@ -5,7 +5,7 @@ import (
 )
 
 // IP generates a random public IP address.
-func (a *Anonymity) IP() string {
+func (a *Generator) IP() string {
 	for {
 		ip := make(net.IP, 4)
 		a.rand.Read(ip)

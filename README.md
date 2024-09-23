@@ -22,17 +22,36 @@ import (
 
 func main() {
     a := anonymity.New()
-	
+
     // Generate random ip address
     ip := a.IP()
     fmt.Println(ip)
+
+    // output:
+    // 78.82.211.197
+    // ::::::::::::::::::::::::::
 
     // Generate random user agent
     ua := a.UserAgent()
     fmt.Println(ua)
 
+    // output:
+    // Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko
+    // ::::::::::::::::::::::::::
+
     // Generate random headers
     headers := a.Header(ip)
     fmt.Println(headers)
+
+    // output:
+    // X-Originating-IP		78.82.211.197
+    // X-Remote-IP		78.82.211.197
+    // X-Remote-Addr		78.82.211.197
+    // X-Client-IP		78.82.211.197
+    // X-Host			78.82.211.197
+    // X-Forwarded-Host		78.82.211.197
+    // X-Forwarded-For		78.82.211.197
+    // X-Forwarded-Server	78.82.211.197
+    // ::::::::::::::::::::::::::
 }
 ```
